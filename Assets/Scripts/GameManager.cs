@@ -22,9 +22,8 @@ public class GameManager : MonoBehaviour
     public List<Sprite> playerSprites;
     public List<Sprite> weaponSprites;
     public List<int> weaponSprices;
-
     public Player player;
-
+    public FloatingTextManager floatingTextManager;
     public int gold;
     public int xp;
 
@@ -50,5 +49,10 @@ public class GameManager : MonoBehaviour
 
         gold = int.Parse(state[1]);
         xp = int.Parse(state[2]);
+    }
+
+    public void ShowFloatingText(string text, int fontSize, Color color, Vector3 position, Vector3 motion, float duration)
+    {
+        floatingTextManager.Show(text, fontSize, color, position, motion, duration);
     }
 }

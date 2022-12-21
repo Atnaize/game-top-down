@@ -1,11 +1,11 @@
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 
 public class FloatingText
 {
     public bool active;
-    public GameObject gObject;
-    public Text txt;
+    public GameObject gameObject;
+    public TextMeshProUGUI textMeshProUGUI;
     public Vector3 motion;
     public float duration;
     public float lastShown;
@@ -14,16 +14,16 @@ public class FloatingText
     {
         active = true;
         lastShown = Time.time;
-        gObject.SetActive(active);
+        gameObject.SetActive(active);
     }
 
     public void Hide()
     {
         active = false;
-        gObject.SetActive(active);
+        gameObject.SetActive(active);
     }
 
-    public void UpdateFloatingText()
+    public void Update()
     {
         if (!active) {
             return;
@@ -33,6 +33,6 @@ public class FloatingText
             Hide();
         }
 
-        gObject.transform.position += motion * Time.deltaTime;
+        gameObject.transform.position += motion * Time.deltaTime;
     }
 }
