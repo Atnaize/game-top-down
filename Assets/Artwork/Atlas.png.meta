@@ -1028,7 +1028,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1049,7 +1049,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1070,7 +1070,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1078,6 +1078,69 @@ TextureImporter:
       bones: []
       spriteID: 439bbb759ff0fd14c999644961a3b3f8
       internalID: -1070799625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_1
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 464
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0355d68041c23945846421d8bc01af3
+      internalID: -1415097465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_2
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 465
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f66e763ed6d3f2643910a1c31eb4e6a0
+      internalID: -719491776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_3
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 465
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e15434ac3826084fae47dabe855ec20
+      internalID: -591155524
       vertices: []
       indices: 
       edges: []
@@ -1101,14 +1164,17 @@ TextureImporter:
       Floor_2: 654494115
       Wall_7: 1423566911
       Chest_full_2: -1012186625
+      Sword_3: -591155524
       Wall_1: -142981506
       Floor_9: 1829881511
       Wall_blue: 1440783704
       Wall_Top_3: 1083646171
       Wall_0: 1596486826
       Wall_11: 767712285
+      Atlas_1: 1104959502
       Wall_yellow: 1786001292
       Floor_3: -1115512815
+      Sword_2: -719491776
       Coin_1: -2073580883
       Floor_1: 772741561
       Coin_3: 53432119
@@ -1136,6 +1202,7 @@ TextureImporter:
       Wall_Top_1: 322077751
       Floor_10: 1153592380
       Floor_5: -1765530806
+      Sword_1: -1415097465
       Chest_full_1: -1442116996
       Box_1: 1681503315
       Chest_full_0: 1530770919
