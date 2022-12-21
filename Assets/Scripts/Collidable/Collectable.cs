@@ -20,6 +20,5 @@ public class Collectable : Collidable
     protected virtual void OnCollect()
     {
         collected = true;
-        GameManager.instance.SaveState();
     }
 }
