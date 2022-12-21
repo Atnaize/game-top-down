@@ -1091,7 +1091,7 @@ TextureImporter:
         width: 10
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1112,7 +1112,7 @@ TextureImporter:
         width: 10
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1133,7 +1133,7 @@ TextureImporter:
         width: 10
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1141,6 +1141,216 @@ TextureImporter:
       bones: []
       spriteID: 9e15434ac3826084fae47dabe855ec20
       internalID: -591155524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Staff_1
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 337
+        width: 8
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e18b8e703e7d3c8498b0fa64b01734af
+      internalID: 821541123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Staff_2
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 337
+        width: 8
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa0afd807561d7744b08342e09461a16
+      internalID: 861366161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maskboy_1
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 320
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff73053e98b86164aaffe100fa2710f9
+      internalID: -373653865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maskboy_2
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 320
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f03594e0bdfd494dab34903eb62cef3
+      internalID: -786491488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maskboy_3
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 320
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af127a4f02e6cf940a2f91013ed2d71d
+      internalID: -625645919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maskboy_4
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 320
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a74132e770fd7d24aa0f97ea5d26e8d4
+      internalID: -1905878390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maskboy_5
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 320
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b990492cfba9754fb080057e566732f
+      internalID: 1369498929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maskboy_6
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 320
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d0aa36222ac8d349ab90229b89879e2
+      internalID: 482490221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maskboy_7
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 320
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3080708df526a6c49a8bd45b695f1e97
+      internalID: 90469483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maskboy_8
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 320
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 526b8cdb1892cdf48b248128be53cd90
+      internalID: -1015291885
       vertices: []
       indices: 
       edges: []
@@ -1169,6 +1379,7 @@ TextureImporter:
       Floor_9: 1829881511
       Wall_blue: 1440783704
       Wall_Top_3: 1083646171
+      Maskboy_3: -625645919
       Wall_0: 1596486826
       Wall_11: 767712285
       Atlas_1: 1104959502
@@ -1176,10 +1387,12 @@ TextureImporter:
       Floor_3: -1115512815
       Sword_2: -719491776
       Coin_1: -2073580883
+      Maskboy_8: -1015291885
       Floor_1: 772741561
       Coin_3: 53432119
       Coin_4: 970904772
       Chest_empty_1: 1746245236
+      Staff_2: 861366161
       Chest_empty_3: -1070799625
       Wizard_0: 1425510033
       Wall_9: -1768451391
@@ -1188,6 +1401,7 @@ TextureImporter:
       wall_6: -593288137
       Floor_6: -565170373
       Healing_1: 1610260315
+      Maskboy_4: -1905878390
       Wall_green: -1464296368
       Coin_2: 211780233
       Healing_2: 456584861
@@ -1198,14 +1412,21 @@ TextureImporter:
       Healing_3: 1729901577
       Chest_empty_0: -459797569
       Witch_0: 1109148248
+      Staff_1: 821541123
+      Maskboy_1: -373653865
+      Maskboy_2: -786491488
       Wall_8: 1749946704
       Wall_Top_1: 322077751
       Floor_10: 1153592380
       Floor_5: -1765530806
       Sword_1: -1415097465
+      Atlas_0: 1858537386
+      Maskboy_5: 1369498929
       Chest_full_1: -1442116996
       Box_1: 1681503315
+      Maskboy_7: 90469483
       Chest_full_0: 1530770919
+      Maskboy_6: 482490221
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
