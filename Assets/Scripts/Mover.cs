@@ -10,7 +10,6 @@ public abstract class Mover : Fighter
     protected float ySpeed = 0.75f;
     protected float xSpeed = 1f;
 
-
     protected virtual void Start()
     {
         boxCollider = GetComponent<BoxCollider2D>();
@@ -21,8 +20,12 @@ public abstract class Mover : Fighter
         moveDelta = new Vector3(vector3.x * xSpeed, vector3.y * ySpeed, 0).normalized;
 
         flipSprite(moveDelta.x);
-        checkCollisionX();
-        checkCollisionY();
+
+        moveDelta += pushDirection;
+        pushDirection = Vector3.Lerp(pushDirection, Vector3.zero, pushRecoverySpeed);
+
+        checkCollision(moveDelta.x, 0f, moveDelta.x);
+        checkCollision(0f, moveDelta.y, moveDelta.y);
     }
 
     private void flipSprite(float x)
@@ -46,22 +49,11 @@ public abstract class Mover : Fighter
             LayerMask.GetMask("Actor", "Blocking")
         );
 
-        if (hit.collider == null) {
-            if (x == 0) {
-                transform.Translate(0, distance, 0);
-            } else {
-                transform.Translate(distance, 0, 0);
-            }
-        }
-    }
-
-    private void checkCollisionY()
-    {
-        checkCollision(0f, moveDelta.y, moveDelta.y);
-    }
-
-    private void checkCollisionX()
-    {
-        checkCollision(moveDelta.x, 0f, moveDelta.x);
+        if (hit.collider != null)
+            return;
+        if (x == 0)
+            transform.Translate(0, distance, 0);
+        if (y == 0)
+            transform.Translate(distance, 0, 0);
     }
 }
