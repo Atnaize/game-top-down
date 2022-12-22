@@ -5,10 +5,11 @@ using UnityEngine;
 public class Weapon : Collidable
 {
     public int damagePoint = 1;
-    public float pushForce = 2.0f;
+    public float pushForce = 3.0f;
 
     public int weaponLevel = 0;
     private SpriteRenderer spriteRenderer;
+    private Animator animator;
 
     private float cooldown = 0.5f;
     private float lastAttack;
@@ -17,6 +18,7 @@ public class Weapon : Collidable
     {
         base.Start();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
 
     protected override void Update()
@@ -49,6 +51,6 @@ public class Weapon : Collidable
     }
     private void Attack()
     {
-        Debug.Log("Attack !");
+        animator.SetTrigger("WeaponTriggerSwing");
     }
 }
