@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
     public List<Sprite> playerSprites;
     public List<Sprite> weaponSprites;
     public List<int> weaponSprices;
-    public PlayerController player;
+    public Player player;
     public FloatingTextManager floatingTextManager;
     public int gold;
     public int xp;
