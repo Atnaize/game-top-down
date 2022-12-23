@@ -2,35 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(BoxCollider2D))]
+[RequireComponent(typeof(Rigidbody2D))]
 public class Collidable : MonoBehaviour
 {
-    public ContactFilter2D filter;
-    private BoxCollider2D boxCollider;
-    private Collider2D[] hits = new Collider2D[10];
+    protected Rigidbody2D rb;
 
-    protected virtual void Start()
+    public virtual void Start()
     {
-        boxCollider = GetComponent<BoxCollider2D>();
+        // Get a reference to the player's Rigidbody2D component
+        rb = GetComponent<Rigidbody2D>();
+        rb.gravityScale = 0;
+        rb.freezeRotation = true;
     }
 
-    protected virtual void Update()
+    public virtual void Update()
     {
-        boxCollider.OverlapCollider(filter, hits);
-        for (int i = 0; i < hits.Length; i++)
-        {
-            if (!hits[i]) {
-                continue;
-            }
-
-            OnCollide(hits[i]);
-
-            hits[i] = null;
-        }
     }
 
-    protected virtual void OnCollide(Collider2D collider2D)
+    public virtual void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("OnCollide is not implemented for " + collider2D.name);
+        Debug.Log("OnCollide is not implemented for " + collision.gameObject.name);
     }
 }

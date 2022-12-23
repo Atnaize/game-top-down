@@ -6,9 +6,16 @@ public class Chest : Collectable
 {
     public Sprite emptyChest;
     public int goldAmount = 5;
+
+    public override void Start()
+    {
+        base.Start();
+        rb.isKinematic = true;
+    }
     protected override void OnCollect()
     {
         base.OnCollect();
+
         GetComponent<SpriteRenderer>().sprite = emptyChest;
         GameManager.instance.gold += goldAmount;
 

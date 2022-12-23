@@ -6,13 +6,19 @@ public class Collectable : Collidable
 {
     protected bool collected = false;
 
-    protected override void OnCollide(Collider2D collider2D)
+    public override void Start()
+    {
+        base.Start();
+        rb.isKinematic = true;
+    }
+
+    public override void OnCollisionEnter2D(Collision2D collision)
     {
         if (collected) {
             return;
         }
 
-        if (collider2D.name == "Player") {
+        if (collision.gameObject.name == "Player") {
             OnCollect();
         }
     }

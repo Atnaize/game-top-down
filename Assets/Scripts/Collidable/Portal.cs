@@ -6,7 +6,7 @@ public class Portal : Collidable
 {
     public string[] scenesNames = {"Dungeon1"};
 
-    protected override void OnCollide(Collider2D collider2D)
+    public override void OnCollisionEnter2D(Collision2D collision)
     {
         string scenesName = scenesNames[Random.Range(0, scenesNames.Length)];
         SceneManager.LoadScene(scenesName);

@@ -14,14 +14,14 @@ public class Weapon : Collidable
     private float cooldown = 0.5f;
     private float lastAttack;
 
-    protected override void Start()
+    public override void Start()
     {
         base.Start();
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
     }
 
-    protected override void Update()
+    public override void Update()
     {
         base.Update();
 
@@ -35,9 +35,9 @@ public class Weapon : Collidable
         }
     }
 
-    protected override void OnCollide(Collider2D collider2D)
+    public override void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collider2D.name == "Player" || collider2D.tag != "Fighter") {
+        if (collision.gameObject.name == "Player" || collision.gameObject.tag != "Fighter") {
             return;
         }
 
@@ -47,7 +47,7 @@ public class Weapon : Collidable
             pushForce = pushForce,
         };
 
-        collider2D.SendMessage("ReceiveDamage", damage);
+        collision.gameObject.SendMessage("ReceiveDamage", damage);
     }
     private void Attack()
     {
